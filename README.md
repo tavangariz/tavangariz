@@ -1,8 +1,8 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=190&amp;color=0:0B1D3A,100:2F81F7&amp;text=Zahed%20Tavangari&amp;fontSize=46&amp;fontColor=FFFFFF&amp;fontAlignY=34&amp;desc=Bioengineering%20%C2%B7%20Space%20Biomedicine%20%C2%B7%20Computational%20Modelling&amp;descAlignY=53&amp;descSize=15&amp;animation=fadeIn" alt="Zahed Tavangari" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=190&amp;color=0:0B1D3A,100:2F81F7&amp;text=Zahed%20Tavangari&amp;fontSize=46&amp;fontColor=FFFFFF&amp;fontAlignY=34&amp;desc=Bioengineering%20%C2%B7%20Space%20Biomedicine%20%C2%B7%20Nanomedicine%20%C2%B7%20Computational%20Modelling&amp;descAlignY=53&amp;descSize=15&amp;animation=fadeIn" alt="Zahed Tavangari" width="100%" />
 
 <p align="center">
   <a href="https://github.com/tavangariz">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;weight=500&amp;size=21&amp;duration=3600&amp;pause=900&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=48&amp;lines=PhD+Researcher+in+Bioengineering;Space+Biomedicine+%26+Retinal+Physiology;Finite-Element+Modelling+%26+ML+Surrogates;Biomaterials%2C+Bioprinting+%26+Biomedical+Imaging;Reproducible+Scientific+Computing" alt="Research identity" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;weight=500&amp;size=21&amp;duration=3600&amp;pause=900&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=48&amp;lines=PhD+Researcher+in+Bioengineering;Space+Biomedicine+%26+Retinal+Physiology;Nanomedicine+%26+Nanoparticle-Mediated+Therapy;Finite-Element+Modelling+%26+ML+Surrogates;Biomaterials%2C+Bioprinting+%26+Biomedical+Imaging;Reproducible+Scientific+Computing" alt="Research identity" />
   </a>
 </p>
 
@@ -25,8 +25,11 @@ gravity, the radiation dose absorbed a few micrometres into a sample. I build ph
 and statistical models of those stresses, and I test the models against experiments I run myself.
 My doctoral work, funded by the Italian Space Agency, concerns the outer blood–retinal barrier
 under gravitational unloading and the identification of countermeasure targets for
-spaceflight-associated retinal alterations. I worked as a clinical medical physicist before the
-doctorate, which is where the requirement that a model answer to a measurement comes from.
+spaceflight-associated retinal alterations. Nanoparticles run through both halves of what I do: I
+came into the field through nanomedicine, characterising and modelling magneto-plasmonic agents for
+cancer theranostics, and I work now on particles as protective agents as much as therapeutic ones.
+I was a clinical medical physicist before the doctorate, which is where the requirement that a
+model answer to a measurement comes from.
 
 ## Research Focus
 
@@ -34,6 +37,7 @@ doctorate, which is where the requirement that a model answer to a measurement c
 |---|---|
 | **Space biomedicine** | Retinal barrier models under gravitational unloading; ground-based surrogates for spaceflight stressors |
 | **Computational biomechanics** | Finite-element modelling of non-Newtonian flow and cell-scale mechanical dose |
+| **Nanomedicine and nanotheranostics** | Magneto-plasmonic and polymeric nanoparticles as therapeutic and imaging agents; predicting the dose they deliver |
 | **Biomaterials and bioprinting** | Process windows for extrusion bioprinting; micropatterned scaffolds for retinal cell culture |
 | **Machine learning for physical models** | Gaussian-process surrogates over expensive solver grids; deep-learning segmentation of assay images |
 | **Biomedical imaging and image analysis** | Quantitative, batch-scale readouts from fluorescence and brightfield assays; MR relaxometry |
@@ -61,6 +65,22 @@ non-Newtonian finite-element flow through printing geometries to Monte Carlo pho
 through layered culture systems and the reaction-diffusion chemistry that follows. Each model is
 written to be checked against an independent measurement, and the comparison is reported whether or
 not it agrees.
+
+### Nanoparticle-mediated therapy, from characterisation to predicted dose
+
+<p>
+  <img src="https://img.shields.io/badge/Magneto%E2%80%91plasmonic%20nanoparticles-0B1D3A?style=flat-square" alt="Magneto%E2%80%91plasmonic nanoparticles">
+  <img src="https://img.shields.io/badge/Photothermal%20modelling-2F81F7?style=flat-square" alt="Photothermal modelling">
+  <img src="https://img.shields.io/badge/MR%20relaxometry-475569?style=flat-square" alt="MR relaxometry">
+</p>
+
+A nanoparticle becomes a therapeutic only when the dose it delivers can be predicted somewhere
+other than a cuvette. My published work in this area runs from the physico-chemical and MR
+relaxometry characterisation of coated magneto-plasmonic particles, through three-dimensional
+modelling of the heat they deposit in vivo under MRI guidance, to how nanoparticle-mediated
+hyperthermia combines with chemo- and radiotherapy. The same requirement carries into the work I
+do now: a particle proposed as a countermeasure has to be modelled as an optical and chemical
+object in its own right, not only assayed as a treatment.
 
 ### Surrogate models over expensive simulations
 
@@ -175,7 +195,7 @@ that make an expensive simulation usable at the bench.
 - **LinkedIn:** [zahed-tavangari](https://www.linkedin.com/in/zahed-tavangari/)
 
 <p align="center">
-  <sub>University of Bari Aldo Moro &nbsp;·&nbsp; Bioengineering &nbsp;·&nbsp; Space Biomedicine</sub>
+  <sub>University of Bari Aldo Moro &nbsp;·&nbsp; Bioengineering &nbsp;·&nbsp; Space Biomedicine &nbsp;·&nbsp; Nanomedicine</sub>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;section=footer&amp;height=110&amp;color=0:2F81F7,100:0B1D3A" alt="" width="100%" />
