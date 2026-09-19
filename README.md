@@ -1,20 +1,20 @@
-<h1 align="center">Zahed Tavangari</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=190&amp;color=0:0B1D3A,100:2F81F7&amp;text=Zahed%20Tavangari&amp;fontSize=46&amp;fontColor=FFFFFF&amp;fontAlignY=34&amp;desc=Bioengineering%20%C2%B7%20Space%20Biomedicine%20%C2%B7%20Computational%20Modelling&amp;descAlignY=53&amp;descSize=15&amp;animation=fadeIn" alt="Zahed Tavangari" width="100%" />
 
 <p align="center">
-  <b>PhD Researcher in Bioengineering</b><br>
-  Space Biomedicine · Computational Biomechanics · Biomaterials &amp; Bioprinting · Biomedical Imaging
+  <a href="https://github.com/tavangariz">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;weight=500&amp;size=21&amp;duration=3600&amp;pause=900&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=48&amp;lines=PhD+Researcher+in+Bioengineering;Space+Biomedicine+%26+Retinal+Physiology;Finite-Element+Modelling+%26+ML+Surrogates;Biomaterials%2C+Bioprinting+%26+Biomedical+Imaging;Reproducible+Scientific+Computing" alt="Research identity" />
+  </a>
 </p>
 
 <p align="center">
-  Department of Biosciences, Biotechnology and Environment (DBBA)<br>
-  University of Bari Aldo Moro, Italy
+  <a href="https://orcid.org/0000-0002-7361-9109"><img src="https://img.shields.io/badge/ORCID-0000--0002--7361--9109-A6CE39?style=for-the-badge&amp;logo=orcid&amp;logoColor=white" alt="ORCID"></a>
+  <a href="https://scholar.google.com/citations?user=_u01Z-0AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Google Scholar"></a>
+  <a href="https://www.linkedin.com/in/zahed-tavangari/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:z.tavangari@phd.uniba.it"><img src="https://img.shields.io/badge/Email-0B1D3A?style=for-the-badge&amp;logo=maildotru&amp;logoColor=white" alt="Email"></a>
 </p>
 
 <p align="center">
-  <a href="https://orcid.org/0000-0002-7361-9109"><img src="https://img.shields.io/badge/ORCID-0000--0002--7361--9109-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"></a>
-  <a href="https://scholar.google.com/citations?user=_u01Z-0AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
-  <a href="https://www.linkedin.com/in/zahed-tavangari/"><img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:z.tavangari@phd.uniba.it"><img src="https://img.shields.io/badge/Email-z.tavangari%40phd.uniba.it-333333?style=flat-square&logo=maildotru&logoColor=white" alt="Email"></a>
+  <sub><b>Department of Biosciences, Biotechnology and Environment (DBBA)</b> &nbsp;·&nbsp; University of Bari Aldo Moro, Italy</sub>
 </p>
 
 ---
@@ -43,6 +43,12 @@ doctorate, which is where the requirement that a model answer to a measurement c
 
 ### Predicting cell damage in extrusion bioprinting
 
+<p>
+  <img src="https://img.shields.io/badge/FEniCSx%20/%20DOLFINx-0B1D3A?style=flat-square" alt="FEniCSx / DOLFINx">
+  <img src="https://img.shields.io/badge/Gaussian%20process%20surrogate-2F81F7?style=flat-square" alt="Gaussian process surrogate">
+  <img src="https://img.shields.io/badge/ESB35%202026%20·%20Oral-475569?style=flat-square" alt="ESB35 2026 · Oral">
+</p>
+
 **Problem.** Extrusion bioprinting kills a fraction of the cells it deposits, and the settings that
 decide that fraction, namely tip diameter, applied pressure and ink rheology, are still chosen by
 trial and error. The quantity that matters, the mechanical dose an individual cell accumulates on
@@ -63,6 +69,12 @@ it makes the trade-off explicit: how much throughput a given viability actually 
 contribution at ESB35, Antwerp, September 2026.*
 
 ### Photoprotection of retinal pigment epithelium under ultraviolet stress
+
+<p>
+  <img src="https://img.shields.io/badge/Monte%20Carlo%20transport-0B1D3A?style=flat-square" alt="Monte Carlo transport">
+  <img src="https://img.shields.io/badge/Reaction--diffusion-2F81F7?style=flat-square" alt="Reaction-diffusion">
+  <img src="https://img.shields.io/badge/COSPAR%202026%20·%20Oral-475569?style=flat-square" alt="COSPAR 2026 · Oral">
+</p>
 
 **Problem.** Spaceflight-relevant retinal stress is hard to reproduce on the ground, so ultraviolet
 exposure of ARPE-19 monolayers is used here as a controlled surrogate for the oxidative and DNA
@@ -86,6 +98,12 @@ against.
 
 ### Batch-scale quantification of nuclear halo assays
 
+<p>
+  <img src="https://img.shields.io/badge/Cellpose-0B1D3A?style=flat-square" alt="Cellpose">
+  <img src="https://img.shields.io/badge/OpenCV-2F81F7?style=flat-square" alt="OpenCV">
+  <img src="https://img.shields.io/badge/HPC%20batch-475569?style=flat-square" alt="HPC batch">
+</p>
+
 **Problem.** The nuclear halo assay reports DNA damage through the size of the chromatin halo around
 each nucleus. Scored by hand it is slow, and the threshold between a damaged and an undamaged
 nucleus moves with the observer.
@@ -107,17 +125,17 @@ comparison between conditions, instead of a small hand-scored subset.
 
 ## Technical Stack
 
-**Scientific computing.** Python, NumPy, SciPy, pandas, Matplotlib, Jupyter
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,bash,linux,docker,git,github,anaconda,sklearn,opencv" alt="Python, C++, Bash, Linux, Docker, Git, GitHub, Anaconda, scikit-learn, OpenCV" />
+</p>
 
-**Numerical modelling.** FEniCSx / DOLFINx (finite elements), Gmsh (meshing), MPI via mpi4py,
-Monte Carlo photon transport (MCML), Geant4 / Geant4-DNA
-
-**Machine learning.** scikit-learn (Gaussian-process regression, cross-validation), Cellpose
-
-**Imaging and image analysis.** OpenCV, fluorescence and brightfield assay pipelines
-
-**Reproducibility and infrastructure.** Docker, Git, conda/mamba, Make, HPC batch scheduling
-(HTCondor, ReCaS)
+| Layer | Tools |
+|---|---|
+| **Scientific computing** | Python, NumPy, SciPy, pandas, Matplotlib, Jupyter |
+| **Numerical modelling** | FEniCSx / DOLFINx (finite elements), Gmsh (meshing), MPI via mpi4py, Monte Carlo photon transport (MCML), Geant4 / Geant4-DNA |
+| **Machine learning** | scikit-learn (Gaussian-process regression, cross-validation), Cellpose |
+| **Imaging and image analysis** | OpenCV, fluorescence and brightfield assay pipelines |
+| **Reproducibility and infrastructure** | Docker, Git, conda/mamba, Make, HPC batch scheduling (HTCondor, ReCaS) |
 
 ## Research Workflow
 
@@ -189,6 +207,8 @@ that make an expensive simulation usable at the bench.
 - **Google Scholar:** [profile](https://scholar.google.com/citations?user=_u01Z-0AAAAJ)
 - **LinkedIn:** [zahed-tavangari](https://www.linkedin.com/in/zahed-tavangari/)
 
----
+<p align="center">
+  <sub>University of Bari Aldo Moro &nbsp;·&nbsp; Bioengineering &nbsp;·&nbsp; Space Biomedicine</sub>
+</p>
 
-<p align="center"><sub>University of Bari Aldo Moro · Bioengineering · Space Biomedicine</sub></p>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;section=footer&amp;height=110&amp;color=0:2F81F7,100:0B1D3A" alt="" width="100%" />
