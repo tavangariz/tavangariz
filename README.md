@@ -50,7 +50,7 @@ on request.
 <p>
   <img src="https://img.shields.io/badge/FEniCSx%20/%20DOLFINx-0B1D3A?style=flat-square" alt="FEniCSx / DOLFINx">
   <img src="https://img.shields.io/badge/Monte%20Carlo%20transport-2F81F7?style=flat-square" alt="Monte Carlo transport">
-  <img src="https://img.shields.io/badge/Reaction----diffusion-475569?style=flat-square" alt="Reaction-diffusion">
+  <img src="https://img.shields.io/badge/Reaction%E2%80%93diffusion-475569?style=flat-square" alt="Reaction-diffusion">
 </p>
 
 The quantities that decide whether a cell survives a process are usually the ones nobody can
@@ -66,7 +66,7 @@ not it agrees.
 
 <p>
   <img src="https://img.shields.io/badge/Gaussian%20processes-0B1D3A?style=flat-square" alt="Gaussian processes">
-  <img src="https://img.shields.io/badge/Cross----validation-2F81F7?style=flat-square" alt="Cross-validation">
+  <img src="https://img.shields.io/badge/Cross%E2%80%91validation-2F81F7?style=flat-square" alt="Cross-validation">
   <img src="https://img.shields.io/badge/Pareto%20optimisation-475569?style=flat-square" alt="Pareto optimisation">
 </p>
 
