@@ -19,9 +19,9 @@
 
 ---
 
-Cells fail under stresses that are difficult to measure while they are happening: the shear a
-myoblast meets inside a printing needle, the oxidative load a retinal epithelium carries under
-altered gravity, the ultraviolet dose absorbed a few micrometres into a culture. I build physical
+Cells fail under stresses that are difficult to measure while they are happening: the shear a cell
+accumulates inside a printing needle, the oxidative load a tissue barrier carries under altered
+gravity, the radiation dose absorbed a few micrometres into a sample. I build physical
 and statistical models of those stresses, and I test the models against experiments I run myself.
 My doctoral work, funded by the Italian Space Agency, concerns the outer blood–retinal barrier
 under gravitational unloading and the identification of countermeasure targets for
@@ -39,64 +39,44 @@ doctorate, which is where the requirement that a model answer to a measurement c
 | **Biomedical imaging and image analysis** | Quantitative, batch-scale readouts from fluorescence and brightfield assays; MR relaxometry |
 | **Radiation and photon transport** | Monte Carlo optical and particle transport; nanoparticle-mediated thermal and radiation therapy |
 
-## Selected Projects
+## Research Methods
 
-### Predicting cell damage in extrusion bioprinting
+My doctoral projects are unpublished and their repositories are private, so the work is described
+here by method rather than by result. I am glad to discuss any of it, and to share code and data,
+on request.
+
+### Physics-based modelling of the stresses cells actually experience
 
 <p>
   <img src="https://img.shields.io/badge/FEniCSx%20/%20DOLFINx-0B1D3A?style=flat-square" alt="FEniCSx / DOLFINx">
-  <img src="https://img.shields.io/badge/Gaussian%20process%20surrogate-2F81F7?style=flat-square" alt="Gaussian process surrogate">
-  <img src="https://img.shields.io/badge/ESB35%202026%20·%20Oral-475569?style=flat-square" alt="ESB35 2026 · Oral">
+  <img src="https://img.shields.io/badge/Monte%20Carlo%20transport-2F81F7?style=flat-square" alt="Monte Carlo transport">
+  <img src="https://img.shields.io/badge/Reaction----diffusion-475569?style=flat-square" alt="Reaction-diffusion">
 </p>
 
-**Problem.** Extrusion bioprinting kills a fraction of the cells it deposits, and the settings that
-decide that fraction, namely tip diameter, applied pressure and ink rheology, are still chosen by
-trial and error. The quantity that matters, the mechanical dose an individual cell accumulates on
-its way through the nozzle, is not measurable during a print.
+The quantities that decide whether a cell survives a process are usually the ones nobody can
+measure while the process is running: the shear accumulated in a confined flow, the fraction of
+incident light absorbed a few micrometres into a sample, the concentration of a reactive species at
+the moment a probe reports it. I build continuum and transport models of those quantities, from
+non-Newtonian finite-element flow through printing geometries to Monte Carlo photon transport
+through layered culture systems and the reaction-diffusion chemistry that follows. Each model is
+written to be checked against an independent measurement, and the comparison is reported whether or
+not it agrees.
 
-**Approach.** An axisymmetric power-law Navier–Stokes model of the needle geometry, from the
-cartridge through the contraction to the tip,
-solved in FEniCSx/DOLFINx with a density continuation from Stokes to full inertia; Bagley-style
-treatment of the entrance pressure; Lagrangian tracers for per-particle shear and extensional dose;
-and a Gaussian-process surrogate, validated by leave-one-out cross-validation, fitted over a
-32-case grid of four tip diameters by eight pressures. The surrogate turns a solver sweep into a
-Pareto front of throughput against predicted damage.
-
-**Why it matters.** It replaces an empirical settings search with a predicted operating window, and
-it makes the trade-off explicit: how much throughput a given viability actually costs.
-
-*Repository: `l8-myoblast-bioprinting-fem`, private pending publication. Presented as an oral
-contribution at ESB35, Antwerp, September 2026.*
-
-### Photoprotection of retinal pigment epithelium under ultraviolet stress
+### Surrogate models over expensive simulations
 
 <p>
-  <img src="https://img.shields.io/badge/Monte%20Carlo%20transport-0B1D3A?style=flat-square" alt="Monte Carlo transport">
-  <img src="https://img.shields.io/badge/Reaction--diffusion-2F81F7?style=flat-square" alt="Reaction-diffusion">
-  <img src="https://img.shields.io/badge/COSPAR%202026%20·%20Oral-475569?style=flat-square" alt="COSPAR 2026 · Oral">
+  <img src="https://img.shields.io/badge/Gaussian%20processes-0B1D3A?style=flat-square" alt="Gaussian processes">
+  <img src="https://img.shields.io/badge/Cross----validation-2F81F7?style=flat-square" alt="Cross-validation">
+  <img src="https://img.shields.io/badge/Pareto%20optimisation-475569?style=flat-square" alt="Pareto optimisation">
 </p>
 
-**Problem.** Spaceflight-relevant retinal stress is hard to reproduce on the ground, so ultraviolet
-exposure of ARPE-19 monolayers is used here as a controlled surrogate for the oxidative and DNA
-damage involved. Polydopamine nanoparticles are a candidate countermeasure, but whether they
-protect by absorbing the incident photons or by scavenging the radicals that follow is a question a
-viability curve alone cannot separate.
+A solver accurate enough to trust is usually too slow to explore, which leaves the design question
+unanswered even after the physics is solved. I fit Gaussian-process surrogates to structured solver
+grids, validate them by cross-validation rather than by eye, and use them to map the trade-off
+surface an experimentalist actually faces: how much of one objective a given level of another
+costs. The result is a predicted operating window instead of a parameter search at the bench.
 
-**Approach.** An end-to-end forward model of the experiment: Monte Carlo optical transport through
-the layered air / medium / cell / substrate stack, chromophore photochemistry with explicit quantum
-yields, and one-dimensional reaction–diffusion of the resulting reactive species including the
-oxidation kinetics of the fluorescent probe itself. The predictions are compared against paired
-wet-lab assays on ARPE-19 monolayers: dsDNA quantification, DCFH-DA oxidation and the alkaline
-comet assay, under control, nanoparticle, ultraviolet and combined conditions. A Geant4-DNA
-component is maintained for the ionising-radiation extension.
-
-**Why it matters.** Modelling the shielding and the chemistry separately makes the protective
-mechanism identifiable rather than assumed, which is what a countermeasure has to be designed
-against.
-
-*Presented as an oral contribution at COSPAR 2026, Florence.*
-
-### Batch-scale quantification of nuclear halo assays
+### Quantitative image analysis for experimental readouts
 
 <p>
   <img src="https://img.shields.io/badge/Cellpose-0B1D3A?style=flat-square" alt="Cellpose">
@@ -104,24 +84,11 @@ against.
   <img src="https://img.shields.io/badge/HPC%20batch-475569?style=flat-square" alt="HPC batch">
 </p>
 
-**Problem.** The nuclear halo assay reports DNA damage through the size of the chromatin halo around
-each nucleus. Scored by hand it is slow, and the threshold between a damaged and an undamaged
-nucleus moves with the observer.
-
-**Approach.** A hybrid pipeline that uses a Cellpose convolutional model for nucleus detection and
-classical per-nucleus thresholding for the halo boundary, so that the learned step does what it is
-good at and the measured step stays interpretable. It runs as a command-line tool over whole image
-directories on the ReCaS HPC cluster and emits per-nucleus tables, summary statistics, and
-classification figures for inspection.
-
-**Why it matters.** The readout becomes reproducible and large enough to carry a statistical
-comparison between conditions, instead of a small hand-scored subset.
-
-*Repository: `Halo-assay`, private.*
-
-> Repositories for work that is under review are kept private until the corresponding paper is
-> published, at which point a clean, tagged snapshot is released. I am happy to share code and data
-> with reviewers and collaborators on request.
+Assay images scored by hand are slow and move with the observer, which caps how many conditions a
+study can carry. I build pipelines that use a deep-learning model for the step it is good at,
+object detection, and classical measurement for the step that has to stay interpretable, then run
+them as batch command-line tools on HPC so the readout scales to whole experiments and returns
+per-object tables alongside figures for inspection.
 
 ## Technical Stack
 
